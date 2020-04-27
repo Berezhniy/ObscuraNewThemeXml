@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ice_blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/indentation_8"
+        android:layout_marginTop="@dimen/indentation_16"
+        android:background="@drawable/background_white">
+
+        <LinearLayout
+            android:id="@+id/linChooseType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indentation_12"
+            android:layout_marginTop="@dimen/indentation_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/view_param_18"
+                android:layout_height="@dimen/view_param_18"
+                android:background="@color/cool_grey" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_12"
+                android:text="Choose theme type" />
+        </LinearLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indentation_42"
+            android:layout_marginTop="@dimen/indentation_20"
+            android:layout_marginBottom="@dimen/indentation_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linChooseType">
+
+
+            <ImageView
+                android:id="@+id/ivBlue"
+                android:layout_width="@dimen/view_param_24"
+                android:layout_height="@dimen/view_param_24"
+                android:background="@color/soft_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDiss"
+                style="@style/TextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:text="Discussion"
+                app:layout_constraintStart_toEndOf="@+id/ivBlue"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/ivBlack"
+                android:layout_width="@dimen/view_param_20"
+                android:layout_height="@dimen/view_param_20"
+                android:layout_marginTop="@dimen/indentation_18"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/ivBlue"
+                app:layout_constraintStart_toStartOf="@id/ivBlue"
+                app:layout_constraintTop_toBottomOf="@id/ivBlue" />
+
+            <TextView
+                style="@style/TextStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                app:layout_constraintStart_toStartOf="@id/tvDiss"
+                app:layout_constraintTop_toTopOf="@id/ivBlack" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/indentation_8"
+        android:layout_marginTop="@dimen/indentation_8"
+        android:background="@drawable/background_white">
+
+        <LinearLayout
+            android:id="@+id/linChooseCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indentation_12"
+            android:layout_marginTop="@dimen/indentation_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/view_param_18"
+                android:layout_height="@dimen/view_param_18"
+                android:background="@color/cool_grey" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_12"
+                android:text="Choose a category" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indentation_26"
+            android:layout_marginBottom="@dimen/indentation_16"
+           app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linChooseCat">
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="@dimen/indentation_42"
+                android:layout_height="@dimen/indentation_42"
+                android:background="@color/soft_blue"
+                android:layout_marginStart="@dimen/indentation_50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine"
+                style="@style/TextStyle5"
+                android:layout_marginTop="@dimen/indentation_8"
+                app:layout_constraintEnd_toEndOf="@id/iv1"
+                app:layout_constraintStart_toStartOf="@id/iv1"
+                app:layout_constraintTop_toBottomOf="@id/iv1" />
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/view_param_42"
+                android:layout_height="@dimen/view_param_42"
+                android:background="@color/cool_grey"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv1"
+                android:layout_marginStart="@dimen/indentation_60"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle2"
+                android:layout_marginTop="@dimen/indentation_8"
+                app:layout_constraintEnd_toEndOf="@id/iv2"
+                app:layout_constraintStart_toStartOf="@id/iv2"
+                app:layout_constraintTop_toBottomOf="@id/iv2"
+                android:text="Law"/>
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="@dimen/view_param_42"
+                android:layout_height="@dimen/view_param_42"
+                android:background="@color/cool_grey"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv2"
+                android:layout_marginStart="@dimen/indentation_60"/>
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle2"
+                android:layout_marginTop="@dimen/indentation_8"
+                app:layout_constraintEnd_toEndOf="@id/iv3"
+                app:layout_constraintStart_toStartOf="@id/iv3"
+                app:layout_constraintTop_toBottomOf="@id/iv3"
+                android:text="Sport"/>
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="@dimen/view_param_42"
+                android:layout_height="@dimen/view_param_42"
+                android:background="@color/cool_grey"
+                android:layout_marginTop="@dimen/indentation_30"
+                app:layout_constraintTop_toBottomOf="@id/tv1"
+                app:layout_constraintStart_toStartOf="@id/iv1"
+                />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle2"
+                android:layout_marginTop="@dimen/indentation_8"
+                app:layout_constraintEnd_toEndOf="@id/iv4"
+                app:layout_constraintStart_toStartOf="@id/iv4"
+                app:layout_constraintTop_toBottomOf="@id/iv4"
+                android:text="Art"/>
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="@dimen/view_param_42"
+                android:layout_height="@dimen/view_param_42"
+                android:background="@color/cool_grey"
+                app:layout_constraintTop_toTopOf="@id/iv4"
+                app:layout_constraintStart_toEndOf="@id/iv4"
+                android:layout_marginStart="@dimen/indentation_60"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle2"
+                android:layout_marginTop="@dimen/indentation_8"
+                app:layout_constraintEnd_toEndOf="@id/iv5"
+                app:layout_constraintStart_toStartOf="@id/iv5"
+                app:layout_constraintTop_toBottomOf="@id/iv5"
+                android:text="Places"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/indentation_8"
+    android:layout_marginTop="@dimen/indentation_8"
+    android:background="@drawable/background_white">
+    <LinearLayout
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linEnterTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indentation_12"
+            android:layout_marginTop="@dimen/indentation_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/view_param_18"
+                android:layout_height="@dimen/view_param_18"
+                android:background="@color/cool_grey" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_12"
+                android:text="Enter theme title" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linTextEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indentation_24"
+            android:layout_marginHorizontal="@dimen/indentation_12"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle4"
+            android:text="Enter theme title"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentation_4">
+        <include layout="@layout/divider"
+            android:id="@+id/divider1"
+            />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/indentation_12"
+        android:textSize="@dimen/indentation_12"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/black_38"
+        android:text="40/50"
+        app:layout_constraintTop_toBottomOf="@id/lin3"
+        app:layout_constraintEnd_toEndOf="@id/lin3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/indentation_8"
+        />
+</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/indentation_8"
+        android:layout_marginHorizontal="@dimen/indentation_8"
+        android:background="@drawable/background_white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linEnterDescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indentation_12"
+            android:layout_marginTop="@dimen/indentation_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/view_param_18"
+                android:layout_height="@dimen/view_param_18"
+                android:background="@color/cool_grey" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_12"
+                android:text="Enter a description" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indentation_24"
+            android:layout_marginHorizontal="@dimen/indentation_12"
+            android:layout_marginBottom="@dimen/indentation_20"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle4"
+                android:text="Enter a description"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentation_4">
+                <include layout="@layout/divider"
+                    android:id="@+id/divider1"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
